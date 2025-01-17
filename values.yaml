@@ -1,4 +1,4 @@
 deployment:
   replicas: 1
 ingress:
-  host: dev-gateway-api.local
+  host: qa-gateway-api.local
