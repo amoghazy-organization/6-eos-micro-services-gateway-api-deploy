@@ -1,4 +1,4 @@
-  def env = "prod"
+  def env = "dev"
   pipeline {
     agent {
         kubernetes {
@@ -10,7 +10,7 @@
 
                  stage ('Checkout SCM'){
              steps {
-            git credentialsId: 'git', url: ' https://github.com/amoghazy-organization/6-eos-micro-services-gateway-api-deploy.git', branch:  "main"
+            git credentialsId: 'git', url: ' https://github.com/amoghazy-organization/6-eos-micro-services-gateway-api-deploy.git', branch:  "${env}"
           }}
 
 

@@ -1,4 +1,4 @@
 deployment:
-  replicas: 2
+  replicas: 1
 ingress:
-  host: prod-gateway-api.local
+  host: dev-gateway-api.local
